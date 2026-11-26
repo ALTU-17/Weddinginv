@@ -13,7 +13,7 @@ import "@fontsource/great-vibes/400.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Groom & Bride · Royal Wedding Invitation",
+  title: "Wedding Invitation",
   description: "You are cordially invited to a wedding celebration. Open your royal invitation.",
   // For a WhatsApp link preview, add: openGraph: { images: ["https://YOUR-SITE/preview.jpg"] }
   openGraph: { title: "Royal Wedding Invitation", description: "With the blessings of Allah, you are cordially invited ✨", type: "website" },
