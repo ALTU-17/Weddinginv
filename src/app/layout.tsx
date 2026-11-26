@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "@fontsource/amiri/400.css";
 import "@fontsource/amiri/700.css";
 import "@fontsource/cinzel/500.css";
@@ -33,6 +34,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="locked">
         {children}
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
