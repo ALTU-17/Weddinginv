@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import "@fontsource/amiri/400.css";
 import "@fontsource/amiri/700.css";
 import "@fontsource/cinzel/500.css";
@@ -29,7 +30,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preload" as="image" href="/img/dr.webp" type="image/webp" />
         <link rel="preload" as="image" href="/img/pl.webp" type="image/webp" />
       </head>
-      <body className="locked">{children}</body>
+      <body className="locked">
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
